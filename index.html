@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>
+                <img src="img/ceiling-logo2.png" alt="">
+            </li>
+            <li>
+                <input type="text">
+                <input type="button" value="搜索">
+            </li>
+        </ul>
+    </div>
+    <h3 onclick="shop()"><span>我的购物车</span>（<span id="count">0</span>）</h3>
+    <div id="commodity">
+        <ul>
+            <li>
+                <img src="img/1cde.jpg" alt="">
+                <dt>
+                    <span>A米汉堡</span>
+                    <span>16元/份</span>
+                </dt>
+                <dt>
+                    <span>月销8148单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>45分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+            <li>
+                <img src="img/3a31d.jpg" alt="">
+                <dt>
+                    <span>杨记小厨</span>
+                    <span>17.5元/份</span>
+                </dt>
+                <dt>
+                    <span>月销4639单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>38分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+            <li>
+                <img src="img/9ecd.jpg" alt="">
+                <dt>
+                    <span>杨铭宇黄焖鸡米饭</span>
+                    <span>18元/份</span>
+                </dt>
+                <dt>
+                    <span>月销2571单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>25分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+            <li>
+                <img src="img/d64c553.jpg" alt="">
+                <dt>
+                    <span>烤肉拌饭</span>
+                    <span>18元/份</span>
+                </dt>
+                <dt>
+                    <span>月销2347单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>29分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="img/3d875.jpg" alt="">
+                <dt>
+                    <span>有名堂</span>
+                    <span>14元/份</span>
+                </dt>
+                <dt>
+                    <span>月销2156单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>43分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+            <li>
+                <img src="img/880259b.jpg" alt="">
+                <dt>
+                    <span>翔仔湾</span>
+                    <span>20元/份</span>
+                </dt>
+                <dt>
+                    <span>月销1803单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>34分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+            <li>
+                <img src="img/1b718f.jpg" alt="">
+                <dt>
+                    <span>食尚便当</span>
+                    <span>21元/份</span>
+                </dt>
+                <dt>
+                    <span>月销3554单</span>
+                </dt>
+                <dt>
+                    <span>起送￥12</span>
+                    <span>免配送费</span>
+                    <span>46分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+            <li>
+                <img src="img/4c981e4.jpg" alt="">
+                <dt>
+                    <span>格子那只水饺</span>
+                    <span>13元/份</span>
+                </dt>
+                <dt>
+                    <span>月销1682单</span>
+                </dt>
+                <dt>
+                    <span>起送￥10</span>
+                    <span>免配送费</span>
+                    <span>23分钟</span>
+                </dt>
+                <dt>
+                    <input type="button" value="加入购物车" onclick="shoppingTrolley(this)" class="button">
+                </dt>
+            </li>
+        </ul>
+    </div>
+    <div id="shoppingTrolley">
+        <table id="tab">
+            <tr>
+                <th>
+                    <span>全选</span>
+                    <input type="checkbox" name="" id="inp" onclick="checkAll(this)">
+                </th>
+                <th>
+                    <span>菜品</span>
+                </th>
+                <th>
+                    <span>价格</span>
+                </th>
+                <th>
+                    <span>数量</span>
+                </th>
+                <th>
+                    <span>操作</span>
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <li>
+                <input type="button" value="删除选中项" onclick="deleteSelected()">
+                <input type="button" value="继续点餐" onclick="continues()">
+            </li>
+            <li>
+                <span>合计</span>
+                <span id="accounts"></span>
+                <input type="button" value="结算" onclick="closeAnAccount()">
+            </li>
+        </ul>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
